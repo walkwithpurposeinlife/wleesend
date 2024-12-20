@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+          margin: 0;
+            padding: 0;
+            align-items: center;
+        }
+        
+header {
+            background-color: #f8f8f8;
+            border-bottom: 1px solid #ddd;
+        }
+           .subheading {
+            color: #ea2f2f; /* Red color for subheading */
+            font-size: 28px !important;
+            margin-top: 30px !important;
+            margin-bottom: 20px;
+      text-align: center;
+        }
+
+        .top-menu {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        
+        a.logout {
+    color: #ea2f2f !important;
+}
+
+        .auth-menu a {
+            margin-left: 20px;
+            text-decoration: none;
+        }
+
+        a.login {
+            color: #ea2f2f;
+        }
+
+        .auth-menu a:hover {
+            text-decoration: underline;
+        }
+
+        .sub-menu {
+            background-color: #2b2980; /* Changed to new color */
+        }
+
+        .sub-menu ul {
+            list-style: none;
+            padding: 10px 20px;
+            margin: 0;
+            display: flex;
+        }
+
+        .sub-menu li {
+            margin-right: 20px;
+        }
+
+        .sub-menu a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .sub-menu a:hover {
+            text-decoration: underline;
+        }
+        .subheading {
+            color: #ea2f2f; /* Red color for subheading */
+            font-size: 18px;
+            margin-top: 10px;
+            margin-bottom: 20px;
+        }
+        
+        .order-container {
+        align-items: center !important;
+        max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            }
+            
+        .receipt {
+            padding: 20px;
+            width:800px;
+        }
+        
+
+        .status {
+            color: #2b2980;
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            display: flex;
+            
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .status span {
+            display: inline-block;
+            border: 2px solid #2b2980;
+            width: 20px;
+            height: 20px;
+            background-color: #2b2980;
+            border-radius: 50%;
+            position: relative;
+            
+        }
+
+        .status span:after {
+            content: '\2713';
+            color: #fff;
+            font-size: 14px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+    
+
+        .receipt h2 {
+            color: #ea2f2f;
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        .receipt table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .receipt table td {
+            padding: 5px 0;
+        }
+
+        .receipt table td:first-child {
+            font-weight: bold;
+        }
+
+        .footer {
+            margin-top: 20px;
+            font-size: 14px;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 20px;
+            background-color: #ea2f2f;
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        .btn:hover {
+            background-color: #c82828;
+        }
+    </style>
+</head>
+<body>
+<header>
+        <div class="top-menu">
+            <div class="logo">WleeSend</div>
+            <div class="auth-menu">
+                <a href="#" class="person-name" onclick="showLogin()">John Doe</a>
+                <a href="#" class="logout" onclick="showSignup()">Logout</a>
+            </div>
+        </div>
+        <nav class="sub-menu">
+            <ul>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Support</a></li>
+                <li><a href="#">Send Credit</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- Receipt Section -->
+        <div class="order-container">
+            <div class="subheading">Order Status</div>
+
+        <div class="status">
+            <span></span>
+            Your Mobile Airtime Credit was sent successfully!
+        </div>
+        <div class="receipt">
+            <h2>Your Receipt</h2>
+            <table>
+                <tr>
+                    <td>Product:</td>
+                    <td>Send Mobile Airtime Credit</td>
+                </tr>
+                <tr>
+                    <td>Receiver Number:</td>
+                    <td>+231 777 010155</td>
+                </tr>
+                <tr>
+                    <td>Operator:</td>
+                    <td>MTN (Lonestar)</td>
+                </tr>
+                <tr>
+                    <td>Product:</td>
+                    <td>$20 (X5 Multiplier) Bundle</td>
+                </tr>
+                <tr>
+                    <td>Transaction Total Paid:</td>
+                    <td>$22</td>
+                </tr>
+            </table>
+            <div class="footer">
+            Thank you for using WleePay!
+        </div>
+        <a href="#" class="btn">Send More Credit</a>
+        </div>
+        </div>  
+    
+</body>
+</html>

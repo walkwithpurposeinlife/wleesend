@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transactions History - WleeSend</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #f8f8f8;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .top-menu {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .auth-menu a {
+            margin-left: 20px;
+            text-decoration: none;
+        }
+
+a.logout {
+color: #ea2f2f;
+}
+
+        .auth-menu a:hover {
+            text-decoration: underline;
+        }
+
+        .sub-menu {
+            background-color: #2b2980; /* Changed to new color */
+        }
+
+        .sub-menu ul {
+            list-style: none;
+            padding: 10px 20px;
+            margin: 0;
+            display: flex;
+        }
+
+        .sub-menu li {
+            margin-right: 20px;
+        }
+
+        .sub-menu a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .sub-menu a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            padding: 20px;
+            text-align: center; /* Center align text in main */
+        }
+
+        h1 {
+            margin-bottom: 20px; /* Space below the heading */
+        }
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+th {
+background-color:#2b2980;
+color: #fff;
+}
+
+#Transactions-History-section {
+width: 1000px;               /* Set the width to 600px */
+    margin: 0 auto;            /* Center the section horizontally */
+    text-align: center;        /* Center-align the text inside the section */
+    padding: 20px;             /* Optional: Add some padding */
+    
+}
+        .input-container {
+            margin-bottom: 20px; /* Space below the input fields */
+        }
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+</style>
+</head>
+<body>
+<header>
+        <div class="top-menu">
+            <div class="logo">WleeSend</div>
+            <div class="auth-menu">
+                <a href="#" class="person-name" onclick="showLogin()">John Doe</a>
+                <a href="#" class="logout" onclick="showSignup()">Logout</a>
+            </div>
+        </div>
+        <nav class="sub-menu">
+            <ul>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Support</a></li>
+                <li><a href="#">Send Credit</a></li>
+            </ul>
+        </nav>
+    </header>
+ <main>
+        <!-- Transactions History Section -->
+
+<table id="Transactions-History-section">
+<h1>My Account</h1>
+<h3>Transactions History</h3>
+  <tr>
+    <th>Status</th>
+    <th>Type</th>
+    <th>Date</th>
+    <th>Send Amount</th>
+    <th>Receiver's Phone Number</th>
+    <th>Action</th>
+    <th>Action</th>
+  </tr>
+  <tr>
+    <td>Completed</td>
+    <td>LEC Credit</td>
+    <td>02/1/2024 3:30PM</td>
+    <td>USD $25</td>
+    <td>231770001002</td>
+    <td><button>Show receipt</button></td>
+    <td><button>Send again</button></td>
+  </tr>
+  <tr>
+    <td>Completed</td>
+    <td>Mobile/Data Credit</td>
+    <td>02/1/2024 3:30PM</td>
+    <td>USD $25</td>
+    <td>231770001002</td>
+    <td><button>Show receipt</button></td>
+    <td><button>Send again</button></td>
+  </tr>
+  <tr>
+    <td>Completed</td>
+    <td>Mobile/Data Credit</td>
+    <td>02/1/2024 3:30PM</td>
+    <td>USD $25</td>
+    <td>231770001002</td>
+    <td><button>Show receipt</button></td>
+    <td><button>Send again</button></td>
+  </tr>
+<tr>
+    <td>Completed</td>
+    <td>LEC Credit</td>
+    <td>02/1/2024 3:30PM</td>
+    <td>USD $25</td>
+    <td>231770001002</td>
+    <td><button>Show receipt</button></td>
+    <td><button>Send again</button></td>
+  </tr>
+<tr>
+    <td>Completed</td>
+    <td>LEC Credit</td>
+    <td>02/1/2024 3:30PM</td>
+    <td>USD $25</td>
+    <td>231770001002</td>
+    <td><button>Show receipt</button></td>
+    <td><button>Send again</button></td>
+  </tr>
+    </main>
+</body>
+</html>

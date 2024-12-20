@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Account - WleeSend</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #f8f8f8;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .top-menu {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .auth-menu a {
+            margin-left: 20px;
+            text-decoration: none;
+            color: #2b2980; /* Changed from #007BFF to #2b2980 */
+        }
+a.logout {
+    color: #ea2f2f !important;
+}
+
+        .auth-menu a:hover {
+            text-decoration: underline;
+        }
+
+        .sub-menu {
+            background-color: #2b2980; /* Changed from #007BFF to #2b2980 */
+        }
+
+        .sub-menu ul {
+            list-style: none;
+            padding: 10px 20px;
+            margin: 0;
+            display: flex;
+        }
+
+        .sub-menu li {
+            margin-right: 20px;
+        }
+
+        .sub-menu a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .sub-menu a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            padding: 20px;
+            text-align: center; /* Center align text in main */
+        }
+
+        h1 {
+            margin-bottom: 10px; /* Space below the heading */
+        }
+
+        h2 {
+            margin-bottom: 20px; /* Space below the subheading */
+        }
+
+        .profile-field {
+            text-align: left; /* Align text to the left */
+            margin: 10px 0; /* Space between fields */
+            display: flex; /* Use flexbox for layout */
+            justify-content: center; /* Center align the fields */
+            align-items: center; /* Center align items vertically */
+        }
+
+        .profile-field label {
+            margin-right: 10px; /* Space between label and value */
+            color: black; /* Label color */
+        }
+
+        .profile-value {
+            color: #2b2980; /* Input value color */
+        }
+
+        .reset-password {
+
+            background-color: #FF4C4C; /* Red background */
+            color: white; /* White text */
+            border: none; /* Remove border */
+            padding: 10px; /* Padding for the button */
+            cursor: pointer; /* Pointer cursor on hover */
+            border-radius: 5px; /* Rounded corners */
+            font-size: 16px; /* Font size */
+            width: 200px; /* Set a fixed width */
+        }
+
+        .reset-password:hover {
+            background-color: #d82c2c; /* Darker red on hover */
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <div class="top-menu">
+            <div class="logo">WleeSend</div>
+            <div class="auth-menu">
+                <a href="#" class="person-name" onclick="showLogin()">John Doe</a>
+                <a href="#" class="logout" onclick="showSignup()">Logout</a>
+            </div>
+        </div>
+        <nav class="sub-menu">
+            <ul>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Support</a></li>
+                <li><a href="#">Send Credit</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <h1>My Account</h1>
+        <h2>My Profile</h2>
+        <div class="profile-field">
+            <label>First Name:* </label> <span class="profile-value">John</span>
+        </div>
+        <div class="profile-field">
+            <label>Last Name:* </label> <span class="profile-value">Doe</span>
+        </div>
+        <div class="profile-field">
+            <label>Email:* </label> <span class="profile-value">Johndoe@gmail.com</span>
+        </div>
+        <div class="profile-field">
+            <label>Password:</label>
+            <button class="reset-password">Reset Password</button>
+        </div>
+    </main>
+</body>
+</html>

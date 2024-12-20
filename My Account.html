@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Account - WleeSend</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #f8f8f8;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .top-menu {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+        }
+a.logout {
+    color: #ea2f2f !important;
+}
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .auth-menu a {
+            margin-left: 20px;
+            text-decoration: none;
+            color: #2b2980; /* Changed to new blue color */
+        }
+       
+
+        .auth-menu a:hover {
+            text-decoration: underline;
+        }
+
+        .sub-menu {
+            background-color: #2b2980; /* Changed to new blue color */
+        }
+
+        .sub-menu ul {
+            list-style: none;
+            padding: 10px 20px;
+            margin: 0;
+            display: flex;
+        }
+
+        .sub-menu li {
+            margin-right: 20px;
+        }
+
+        .sub-menu a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .sub-menu a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            padding: 20px;
+            text-align: center; /* Center align text in main */
+        }
+
+        h1 {
+            margin-bottom: 20px; /* Space below the heading */
+        }
+
+        .button-container {
+            margin-top: 20px; /* Add some space above the buttons */
+        }
+
+        .red-button {
+            background-color: #ea2f2f; /* Changed to new red color */
+            color: white; /* White text */
+            border: none; /* Remove border */
+            padding: 10px 20px; /* Padding for the button */
+            margin: 10px 0; /* Space between buttons */
+            cursor: pointer; /* Pointer cursor on hover */
+            border-radius: 5px; /* Rounded corners */
+            font-size: 16px; /* Font size */
+            width: 300px; /* Set a fixed width */
+        }
+
+        .red-button:hover {
+            background-color: #d62828; /* Darker red on hover */
+        }
+
+        .blue-button {
+            background-color: #2b2980; /* Changed to new blue color */
+            color: white; /* White text */
+            border: none; /* Remove border */
+            padding: 10px 20px; /* Padding for the button */
+            margin: 10px 0; /* Space between buttons */
+            cursor: pointer; /* Pointer cursor on hover */
+            border-radius: 5px; /* Rounded corners */
+            font-size: 16px; /* Font size */
+            width: 300px; /* Set a fixed width */
+        }
+
+        .blue-button:hover {
+            background-color: #1f1e5d; /* Darker shade of new blue on hover */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="top-menu">
+            <div class="logo">WleeSend</div>
+            <div class="auth-menu">
+                <a href="#" class="person-name" onclick="showLogin()">John Doe</a>
+                <a href="#" class="logout" onclick="showSignup()">Logout</a>
+            </div>
+        </div>
+        <nav class="sub-menu">
+            <ul>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Support</a></li>
+                <li><a href="#">Send Credit</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <h1>My Account</h1>
+        <div class="button-container">
+            <button class="red-button">Send LEC Credit</button>
+            <button class="red-button">Send Airtime Credit (MTN/Orange)</button>
+            <button class="blue-button">Transactions History</button>
+            <button class="blue-button">My Profile</button>
+        </div>
+    </main>
+</body>
+</html>

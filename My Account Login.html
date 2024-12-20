@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - WleeSend</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="top-menu">
+            <div class="logo">WleeSend</div>
+            <div class="auth-menu">
+                <a href="#">Login</a>
+                <a href="#">Sign Up</a>
+            </div>
+        </div>
+        <nav class="sub-menu">
+            <ul>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Support</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>My Account Login</h1>
+        <div class="input-container">
+            <input type="email" placeholder="Enter Email" required>
+            <input type="password" placeholder="Enter Password" required>
+        </div>
+        <div class="button-container">
+            <button class="blue-button">Sign Up</button>
+            <button class="blue-button">Login</button>
+        </div>
+        <p class="forgot-password">
+            <a href="#">Forget Password?</a>
+        </p>
+    </main>
+</body>
+</html>
+
+<style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #f8f8f8;
+    border-bottom: 1px solid #ddd;
+}
+
+.top-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.auth-menu a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #2b2980; /* Changed to new color */
+}
+
+.auth-menu a:hover {
+    text-decoration: underline;
+}
+
+.sub-menu {
+    background-color: #2b2980; /* Changed to new color */
+}
+
+.sub-menu ul {
+    list-style: none;
+    padding: 10px 20px;
+    margin: 0;
+    display: flex;
+}
+
+.sub-menu li {
+    margin-right: 20px;
+}
+
+.sub-menu a {
+    color: white;
+    text-decoration: none;
+}
+
+.sub-menu a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 20px;
+    text-align: center; /* Center align text in main */
+}
+
+h1 {
+    margin-bottom: 20px; /* Space below the heading */
+}
+
+.input-container {
+    margin-bottom: 20px; /* Space below the input fields */
+}
+
+input {
+    display: block; /* Make inputs block elements */
+    width: 300px; /* Set a fixed width */
+    padding: 10px; /* Padding for inputs */
+    margin: 10px auto; /* Center inputs */
+    border: 1px solid #ccc; /* Border for inputs */
+    border-radius: 5px; /* Rounded corners */
+}
+
+.button-container {
+    margin-top: 20px; /* Add some space above the buttons */
+}
+
+.blue-button {
+    background-color: #2b2980; /* Changed to new color */
+    color: white; /* White text */
+    border: none; /* Remove border */
+    padding: 10px 20px; /* Padding for the button */
+    margin: 0 10px; /* Space between buttons */
+    cursor: pointer; /* Pointer cursor on hover */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 16px; /* Font size */
+}
+
+.blue-button:hover {
+    background-color: #1e1c5c; /* Darker shade of new color on hover */
+}
+
+.forgot-password {
+    margin-top: 20px; /* Space above the forgot password text */
+}
+
+.forgot-password a {
+    text-decoration: none; /* Remove underline */
+    color: #2b2980; /* Changed to new color */
+}
+
+.forgot-password a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+</style>
