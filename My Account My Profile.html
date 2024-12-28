@@ -110,13 +110,42 @@ a.logout {
         .reset-password:hover {
             background-color: #d82c2c; /* Darker red on hover */
         }
-        
+
+        /* Style for the footer */
+        .global-footer {
+            background-color: #2b2980;
+            color: #ffffff;
+            text-align: center;
+            padding: 10px;
+            font-family: Arial, sans-serif;
+            font-size: 14px; }
+    
+    @media only screen and (max-width: 600px) {
+        main {
+    text-align: center;
+    background-image: url(background wleesend.jpeg);
+    background-size: cover;
+    background-position: center;
+    height: auto;
+    color: #fff;
+    padding-top: 185px;
+    padding-bottom: 185px;
+    text-shadow: 2px 2px #2b2980;
+}
+
+        .logo {
+    width: 50%;
+}
+
+        .red-button{
+            margin-bottom: 15px;
+        }
     </style>
 </head>
 <body>
     <header>
         <div class="top-menu">
-            <div class="logo">WleeSend</div>
+          <div class="logo"><img src="WleeSend.png" alt="WleeSend Logo" class="logo" /></div>
             <div class="auth-menu">
                 <a href="#" class="person-name" onclick="showLogin()">John Doe</a>
                 <a href="#" class="logout" onclick="showSignup()">Logout</a>
@@ -149,5 +178,8 @@ a.logout {
             <button class="reset-password">Reset Password</button>
         </div>
     </main>
+    <footer class="global-footer">
+        © 2025 WleeSend. All Rights Reserved.
+   </footer> 
 </body>
 </html>
