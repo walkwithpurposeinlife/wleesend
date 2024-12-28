@@ -32,8 +32,7 @@ header {
         }
 
         .logo {
-            font-size: 24px;
-            font-weight: bold;
+            width: 29%;
         }
         
         a.logout {
@@ -142,7 +141,7 @@ header {
         }
 
         .receipt table td {
-            padding: 5px 0;
+            padding: 8px 0;
         }
 
         .receipt table td:first-child {
@@ -168,12 +167,31 @@ header {
         .btn:hover {
             background-color: #c82828;
         }
+        /* Style for the footer */
+        .global-footer {
+            background-color: #2b2980;
+            color: #ffffff;
+            text-align: center;
+            padding: 10px;
+            font-family: Arial, sans-serif;
+            font-size: 14px; }
+    
+    @media only screen and (max-width: 600px) {
+        main {
+    padding-top: 185px;
+    padding-bottom: 185px;
+}
+
+        .logo {
+    width: 50%;
+}
+
     </style>
 </head>
 <body>
 <header>
         <div class="top-menu">
-            <div class="logo">WleeSend</div>
+            <div class="logo"><img src="WleeSend.png" alt="WleeSend Logo" class="logo" /></div>
             <div class="auth-menu">
                 <a href="#" class="person-name" onclick="showLogin()">John Doe</a>
                 <a href="#" class="logout" onclick="showSignup()">Logout</a>
