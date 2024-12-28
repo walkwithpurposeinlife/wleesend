@@ -20,11 +20,11 @@ header {
             justify-content: space-between;
             align-items: center;
             padding: 10px 20px;
+            background-color: #fff;
         }
 
         .logo {
-            font-size: 24px;
-            font-weight: bold;
+            width: 29%
         }
         
         a.logout {
@@ -157,12 +157,33 @@ header {
         .submit-button:hover {
             background-color: darkred;
         }
+
+        /* Style for the footer */
+        .global-footer {
+            background-color: #2b2980;
+            color: #ffffff;
+            text-align: center;
+            padding: 10px;
+            font-family: Arial, sans-serif;
+            font-size: 14px; }
+    
+    @media only screen and (max-width: 600px) {
+        main {
+    padding-top: 185px;
+    padding-bottom: 185px;
+}
+
+        .logo {
+    width: 50%;
+}
+
+
     </style>
 </head>
 <body>
 <header>
         <div class="top-menu">
-            <div class="logo">WleeSend</div>
+           <div class="logo"><img src="WleeSend.png" alt="WleeSend Logo" class="logo" /></div>
             <div class="auth-menu">
                 <a href="#" class="person-name" onclick="showLogin()">John Doe</a>
                 <a href="#" class="logout" onclick="showSignup()">Logout</a>
@@ -220,5 +241,8 @@ header {
         <button class="submit-button">Submit Payment</button>
     </div>
     </main>
+    <footer class="global-footer">
+        © 2025 WleeSend. All Rights Reserved.
+   </footer> 
 </body>
 </html>
