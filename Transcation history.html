@@ -1,10 +1,11 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Transactions History - WleeSend</title>
-     <style>
+    <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
@@ -25,7 +26,7 @@
         }
 
         .logo {
-            width: 29%;
+            width: 29%
         }
 
         .auth-menu a {
@@ -33,16 +34,16 @@
             text-decoration: none;
         }
 
-        a.logout {
-            color: #ea2f2f;
-        }
+a.logout {
+color: #ea2f2f;
+}
 
         .auth-menu a:hover {
             text-decoration: underline;
         }
 
         .sub-menu {
-            background-color: #2b2980;
+            background-color: #2b2980; /* Changed to new color */
         }
 
         .sub-menu ul {
@@ -50,7 +51,6 @@
             padding: 10px 20px;
             margin: 0;
             display: flex;
-            flex-wrap: wrap;
         }
 
         .sub-menu li {
@@ -68,91 +68,77 @@
 
         main {
             padding: 20px;
-            text-align: center;
+            text-align: center; /* Center align text in main */
         }
 
-        h1, h3 {
-            margin-bottom: 20px;
+        h1 {
+            margin-bottom: 20px; /* Space below the heading */
         }
 
-        table {
-            font-family: Arial, sans-serif;
-            border-collapse: collapse;
-            width: 100%;
-        }
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
 
-        td, th {
-            border: 1px solid #dddddd;
-            text-align: left;
-            padding: 8px;
-        }
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+th {
+background-color:#2b2980;
+color: #fff;
+}
 
-        th {
-            background-color: #2b2980;
-            color: #fff;
-        }
-
-        #Transactions-History-section {
-            width: 100%;
-            overflow-x: auto;
-        }
-
+#Transactions-History-section {
+width: 1000px;               /* Set the width to 600px */
+    margin: 0 auto;            /* Center the section horizontally */
+    text-align: center;        /* Center-align the text inside the section */
+    padding: 20px;             /* Optional: Add some padding */
+    
+}
         .input-container {
-            margin-bottom: 20px;
+            margin-bottom: 20px; /* Space below the input fields */
         }
 
-        tr:nth-child(even) {
-            background-color: #dddddd;
-        }
-
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+        /* Style for the footer */
         .global-footer {
             background-color: #2b2980;
             color: #ffffff;
             text-align: center;
             padding: 10px;
             font-family: Arial, sans-serif;
-            font-size: 14px;
-        }
+            font-size: 14px; }
+    
+    @media only screen and (max-width: 600px) {
+        main {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
 
-        /* Responsive Design */
-        @media only screen and (max-width: 600px) {
-            body {
-                font-size: 14px;
-            }
-
-            .logo {
-                width: 50%;
-            }
-
-            .top-menu {
-                flex-wrap: wrap;
-            }
-
-            table {
+        .logo {
+    width: 50%;
+}
+ table {
                 display: block;
                 overflow-x: auto;
             }
 
             td, th {
                 font-size: 12px;
-                padding: 5px;
+                padding: 8px;
             }
 
-            main {
-                padding: 10px;
-            }
-
-            .auth-menu a {
-                margin-left: 10px;
-                font-size: 14px;
-            }
-        }
-    </style>
+</style>
 </head>
 <body>
 <header>
         <div class="top-menu">
-            <div class="logo"><img src="WleeSend.png" alt="WleeSend Logo" class="logo" /></div>
+           <div class="logo"><img src="WleeSend.png" alt="WleeSend Logo" class="logo" /></div>
             <div class="auth-menu">
                 <a href="#" class="person-name" onclick="showLogin()">John Doe</a>
                 <a href="#" class="logout" onclick="showSignup()">Logout</a>
@@ -228,8 +214,10 @@
     <td><button>Send again</button></td>
   </tr>
     </main>
-    <footer class="global-footer">
+
+   <footer class="global-footer">
         © 2025 WleeSend. All Rights Reserved.
    </footer> 
+ 
 </body>
 </html>
