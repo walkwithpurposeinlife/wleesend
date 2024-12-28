@@ -21,12 +21,12 @@
             justify-content: space-between;
             align-items: center;
             padding: 10px 20px;
+            background-color: #fff;
         }
 
-        .logo {
-            font-size: 24px;
-            font-weight: bold;
-        }
+          .logo {
+    width: 29%;
+}
         
         a.logout {
     color: #ea2f2f !important;
@@ -70,7 +70,8 @@
         }
 
         main {
-            padding: 20px;
+             padding-top: 120px;
+    padding-bottom: 120px;
             text-align: center; /* Center align text in main */
         }
 
@@ -131,12 +132,31 @@
         .blue-button:hover {
             background-color: #c72b2b; /* Darker shade of new color on hover */
         }
+        /* Style for the footer */
+        .global-footer {
+            background-color: #2b2980;
+            color: #ffffff;
+            text-align: center;
+            padding: 10px;
+            font-family: Arial, sans-serif;
+            font-size: 14px; }
+    
+    @media only screen and (max-width: 600px) {
+        main {
+    padding-top: 185px;
+    padding-bottom: 185px;
+}
+
+        .logo {
+    width: 50%;
+}
+
     </style>
 </head>
 <body>
     <header>
         <div class="top-menu">
-            <div class="logo">WleeSend</div>
+           <div class="logo"><img src="WleeSend.png" alt="WleeSend Logo" class="logo" /></div>
             <div class="auth-menu">
                 <a href="#" class="person-name" onclick="showLogin()">John Doe</a>
                 <a href="#" class="logout" onclick="showSignup()">Logout</a>
@@ -182,5 +202,8 @@
             </div>
         </div>
     </main>
+    <footer class="global-footer">
+        © 2025 WleeSend. All Rights Reserved.
+   </footer>
 </body>
 </html>
