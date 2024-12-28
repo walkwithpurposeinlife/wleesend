@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -26,7 +25,7 @@
         }
 
         .logo {
-            width: 29%
+            width: 29%;
         }
 
         .auth-menu a {
@@ -34,16 +33,16 @@
             text-decoration: none;
         }
 
-a.logout {
-color: #ea2f2f;
-}
+        a.logout {
+            color: #ea2f2f;
+        }
 
         .auth-menu a:hover {
             text-decoration: underline;
         }
 
         .sub-menu {
-            background-color: #2b2980; /* Changed to new color */
+            background-color: #2b2980;
         }
 
         .sub-menu ul {
@@ -51,6 +50,7 @@ color: #ea2f2f;
             padding: 10px 20px;
             margin: 0;
             display: flex;
+            flex-wrap: wrap;
         }
 
         .sub-menu li {
@@ -68,156 +68,141 @@ color: #ea2f2f;
 
         main {
             padding: 20px;
-            text-align: center; /* Center align text in main */
+            text-align: center;
         }
 
         h1 {
-            margin-bottom: 20px; /* Space below the heading */
+            margin-bottom: 20px;
+        }
+         .subheading {
+            color: #ea2f2f; /* Red color for subheading */
+            font-size: 18px;
+            margin-top: 10px;
+            margin-bottom: 20px;
+            text-align: center;
+    font-weight: 600;
         }
 
-table {
-  font-family: arial, sans-serif;
-  border-collapse: collapse;
-  width: 100%;
-}
+        table {
+            font-family: Arial, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
 
-td, th {
-  border: 1px solid #dddddd;
-  text-align: left;
-  padding: 8px;
-}
-th {
-background-color:#2b2980;
-color: #fff;
-}
+        td, th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
 
-#Transactions-History-section {
-width: 1000px;               /* Set the width to 600px */
-    margin: 0 auto;            /* Center the section horizontally */
-    text-align: center;        /* Center-align the text inside the section */
-    padding: 20px;             /* Optional: Add some padding */
-    
-}
+        th {
+            background-color: #2b2980;
+            color: #fff;
+        }
+
+        #Transactions-History-section {
+            width: 100%;
+            overflow-x: auto;
+        }
+
         .input-container {
-            margin-bottom: 20px; /* Space below the input fields */
+            margin-bottom: 20px;
         }
 
-tr:nth-child(even) {
-  background-color: #dddddd;
-}
-        /* Style for the footer */
+        tr:nth-child(even) {
+            background-color: #dddddd;
+        }
+
         .global-footer {
             background-color: #2b2980;
             color: #ffffff;
             text-align: center;
             padding: 10px;
             font-family: Arial, sans-serif;
-            font-size: 14px; }
-    
-    @media only screen and (max-width: 600px) {
-        main {
-    padding-top: 60px;
-    padding-bottom: 60px;
-}
+            font-size: 14px;
+        }
 
-        .logo {
-    width: 50%;
-}
- table {
+        /* Responsive Design */
+        @media only screen and (max-width: 600px) {
+           
+
+            .logo {
+                width: 50%;
+            }
+
+
+            table {
                 display: block;
                 overflow-x: auto;
             }
 
             td, th {
                 font-size: 12px;
-                padding: 8px;
+                padding: 5px;
             }
 
-</style>
+            main {
+                padding: 10px;
+            }
+
+        }
+    </style>
 </head>
 <body>
 <header>
-        <div class="top-menu">
-           <div class="logo"><img src="WleeSend.png" alt="WleeSend Logo" class="logo" /></div>
-            <div class="auth-menu">
-                <a href="#" class="person-name" onclick="showLogin()">John Doe</a>
-                <a href="#" class="logout" onclick="showSignup()">Logout</a>
-            </div>
+    <div class="top-menu">
+        <div class="logo"><img src="WleeSend.png" alt="WleeSend Logo" class="logo" /></div>
+        <div class="auth-menu">
+            <a href="#" class="person-name" onclick="showLogin()">John Doe</a>
+            <a href="#" class="logout" onclick="showSignup()">Logout</a>
         </div>
-        <nav class="sub-menu">
-            <ul>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Products</a></li>
-                <li><a href="#">Support</a></li>
-                <li><a href="#">Send Credit</a></li>
-            </ul>
-        </nav>
-    </header>
- <main>
-        <!-- Transactions History Section -->
-
-<table id="Transactions-History-section">
-<h1>My Account</h1>
-<h3>Transactions History</h3>
-  <tr>
-    <th>Status</th>
-    <th>Type</th>
-    <th>Date</th>
-    <th>Send Amount</th>
-    <th>Receiver's Phone Number</th>
-    <th>Action</th>
-    <th>Action</th>
-  </tr>
-  <tr>
-    <td>Completed</td>
-    <td>LEC Credit</td>
-    <td>02/1/2024 3:30PM</td>
-    <td>USD $25</td>
-    <td>231770001002</td>
-    <td><button>Show receipt</button></td>
-    <td><button>Send again</button></td>
-  </tr>
-  <tr>
-    <td>Completed</td>
-    <td>Mobile/Data Credit</td>
-    <td>02/1/2024 3:30PM</td>
-    <td>USD $25</td>
-    <td>231770001002</td>
-    <td><button>Show receipt</button></td>
-    <td><button>Send again</button></td>
-  </tr>
-  <tr>
-    <td>Completed</td>
-    <td>Mobile/Data Credit</td>
-    <td>02/1/2024 3:30PM</td>
-    <td>USD $25</td>
-    <td>231770001002</td>
-    <td><button>Show receipt</button></td>
-    <td><button>Send again</button></td>
-  </tr>
-<tr>
-    <td>Completed</td>
-    <td>LEC Credit</td>
-    <td>02/1/2024 3:30PM</td>
-    <td>USD $25</td>
-    <td>231770001002</td>
-    <td><button>Show receipt</button></td>
-    <td><button>Send again</button></td>
-  </tr>
-<tr>
-    <td>Completed</td>
-    <td>LEC Credit</td>
-    <td>02/1/2024 3:30PM</td>
-    <td>USD $25</td>
-    <td>231770001002</td>
-    <td><button>Show receipt</button></td>
-    <td><button>Send again</button></td>
-  </tr>
-    </main>
-
-   <footer class="global-footer">
-        © 2025 WleeSend. All Rights Reserved.
-   </footer> 
- 
+    </div>
+    <nav class="sub-menu">
+        <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">Support</a></li>
+            <li><a href="#">Send Credit</a></li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <div id="Transactions-History-section">
+        <h1>My Account</h1>
+        <div class="subheading">Transactions Historyt</div>
+        <table>
+            <tr>
+                <th>Status</th>
+                <th>Type</th>
+                <th>Date</th>
+                <th>Send Amount</th>
+                <th>Receiver's Phone Number</th>
+                <th>Action</th>
+                <th>Action</th>
+            </tr>
+            <tr>
+                <td>Completed</td>
+                <td>LEC Credit</td>
+                <td>02/1/2024 3:30PM</td>
+                <td>USD $25</td>
+                <td>231770001002</td>
+                <td><button>Show receipt</button></td>
+                <td><button>Send again</button></td>
+            </tr>
+            <tr>
+                <td>Completed</td>
+                <td>Mobile/Data Credit</td>
+                <td>02/1/2024 3:30PM</td>
+                <td>USD $25</td>
+                <td>231770001002</td>
+                <td><button>Show receipt</button></td>
+                <td><button>Send again</button></td>
+            </tr>
+        </table>
+    </div>
+</main>
+<footer class="global-footer">
+    &copy; 2025 WleeSend. All rights reserved.
+</footer>
 </body>
 </html>
