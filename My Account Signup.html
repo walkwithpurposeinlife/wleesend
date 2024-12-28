@@ -69,6 +69,9 @@ color: #ea2f2f;
             padding: 20px;
             text-align: center; /* Center align text in main */
         }
+        
+        .h1{
+        }
 
         .signup-container {
             width: 300px;
@@ -78,13 +81,13 @@ color: #ea2f2f;
         }
 
         .signup-container h1 {
-            font-size: 18px;
+            font-size: 32px;
             margin-bottom: 20px;
         }
 
         .signup-container label {
             display: block;
-            font-weight: bold;
+            font-weight: 500;
             margin-bottom: 5px;
             text-align: left;
         }
@@ -158,9 +161,7 @@ color: #ea2f2f;
             <input type="email" id="email" name="email" required>
 
             <label for="password">Password:</label>
-            <input type="password" id="password" name="password" required>
-
-            <div class="password-hint">7 characters with letters, numbers, & symbols</div>
+            <input type="password" id="password" placeholder="7 characters with letters, numbers, & symbols" name="password" required>
 
             <button type="submit">Sign Up</button>
         </form>
