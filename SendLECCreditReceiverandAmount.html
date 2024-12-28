@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Signup - WleeSend</title>
+    <title>Send LEC Credit</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -21,25 +21,22 @@
             justify-content: space-between;
             align-items: center;
             padding: 10px 20px;
+            background: #fff;
         }
 
-        .logo {
-            font-size: 24px;
-            font-weight: bold;
-        }
-        
-        a.logout {
-    color: #ea2f2f !important;
+                .logo {
+    width: 29%;
 }
+
 
         .auth-menu a {
             margin-left: 20px;
             text-decoration: none;
         }
 
-        a.login {
-            color: #ea2f2f;
-        }
+a.login {
+color: #ea2f2f;
+}
 
         .auth-menu a:hover {
             text-decoration: underline;
@@ -70,76 +67,102 @@
         }
 
         main {
-            padding: 20px;
+            padding-bottom: 0px;
             text-align: center; /* Center align text in main */
         }
-
-        h1 {
-            margin-bottom: 20px; /* Space below the heading */
-        }
-
-        #signup-section {
-            width: 800px; /* Set the width to 600px */
-            margin: 0 auto; /* Center the section horizontally */
-            text-align: center; /* Center-align the text inside the section */
-            padding: 20px; /* Optional: Add some padding */
-        }
-
-        .subheading {
+        
+      .subheading {
             color: #ea2f2f; /* Red color for subheading */
             font-size: 18px;
             margin-top: 10px;
             margin-bottom: 20px;
         }
 
-        .input-container {
-            margin-bottom: 20px; /* Space below the input fields */
+        .signup-container  {
+            width: 300px;
+            margin: 50px auto;
+
+        }
+        
+
+        .signup-container h1 {
+            font-size: 32px;
+            margin-bottom: 20px;
         }
 
-        .input-group {
-            display: flex; /* Use flexbox for input groups */
-            margin-bottom: 10px; /* Space between input groups */
+        .signup-container label {
+            display: block;
+            font-weight: 500;
+            margin-bottom: 5px;
+            text-align: left;
         }
 
-        .input-label {
-            margin-right: 10px; /* Space between label and input */
-            width: 350px; /* Fixed width for labels */
-            text-align: right; /* Align text to the right */
+        .signup-container input, select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #D3D3D3;
+            border-radius: 3px;
         }
 
-        input, select {
-            flex: 1; /* Allow input/select to take remaining space */
-            padding: 10px; /* Padding for inputs */
-            border: 1px solid #ccc; /* Border for inputs */
-            border-radius: 5px; /* Rounded corners */
+        .signup-container input:focus {
+            border-color: #005880;
+            outline: none;
         }
 
-        .button-container {
-            margin-top: 20px; /* Add some space above the buttons */
+        .signup-container .password-hint, select  {
+            font-size: 12px;
+            color: #555;
+            text-align: left;
+            margin-bottom: 15px;
         }
 
-        .blue-button {
-            background-color: #ea2f2f; /* Changed to new color for Sign Up button */
-            color: white; /* White text */
-            border: none; /* Remove border */
-            padding: 10px 20px; /* Padding for the button */
-            cursor: pointer; /* Pointer cursor on hover */
-            border-radius: 5px; /* Rounded corners */
-            font-size: 16px; /* Font size */
+        .signup-container button {
+            width: 100%;
+            padding: 10px;
+            background-color: red;
+            color: white;
+            font-size: 16px;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
         }
 
-        .blue-button:hover {
-            background-color: #c72b2b; /* Darker shade of new color on hover */
+        .signup-container button:hover {
+            background-color: darkred;
         }
+        .signup-container select{
+        width: 320px;
+        }
+        /* Style for the footer */
+        .global-footer {
+            background-color: #2b2980;
+            color: #ffffff;
+            text-align: center;
+            padding: 10px;
+            font-family: Arial, sans-serif;
+            font-size: 14px; }
+            
+    @media only screen and (max-width: 600px) {
+        main {
+    padding-bottom: 35px;
+            padding-top:35px;
+
+}
+
+        .logo {
+    width: 50%;
+}
+
     </style>
 </head>
 <body>
     <header>
         <div class="top-menu">
-            <div class="logo">WleeSend</div>
+            <div class="logo"><img src="WleeSend.png" alt="WleeSend Logo" class="logo" /></div>
             <div class="auth-menu">
-                <a href="#" class="person-name" onclick="showLogin()">John Doe</a>
-                <a href="#" class="logout" onclick="showSignup()">Logout</a>
+                <a href="#" class="login" onclick="showLogin()">Login</a>
+                <a href="#" class="Signup" onclick="showSignup()">Sign Up</a>
             </div>
         </div>
         <nav class="sub-menu">
@@ -147,28 +170,24 @@
                 <li><a href="#">About</a></li>
                 <li><a href="#">Products</a></li>
                 <li><a href="#">Support</a></li>
-                <li><a href="#">Send Credit</a></li>
             </ul>
         </nav>
     </header>
     
     <main>
         <!-- Signup Section -->
-        <div id="signup-section">
-            <h1>My Account</h1>
-            <div class="subheading">Send LEC Credit: Receiver and Amount</div>
-            <div class="input-container">
-                <div class="input-group">
-                    <label class="input-label" for="first-name">Enter Receiver’s LEC Meter Number:*</label>
-                    <input type="text" id="first-name" placeholder="Enter Receiver’s LEC Meter Number" required>
-                </div>
-                <div class="input-group">
-                    <label class="input-label" for="last-name">Enter Receiver’s Phone Number:*</label>
-                    <input type="text" id="last-name" placeholder="(*an SMS message will be sent to receiver)" required>
-                </div>
-                <div class="input-group">
-                    <label class="input-label" for="email">Select Credit Amount to Buy/Send:</label>
-                    <select id="email" required>
+        <div class="signup-container">
+        <h1>My Account</h1>
+        <div class="subheading">Send LEC Credit: Receiver and Amount</div>
+        <form action="#" method="POST">
+    <label for="meter-number">Enter Receiver’s LEC Meter Number:*</label>
+    <input type="text" id="meter-number" name="meter-number" placeholder="Enter Receiver’s LEC Meter Number" required>
+
+     <label for="phone-number">Enter Receiver’s Phone Number:*</label>
+    <input type="text" id="phone-number" name="phone-number" placeholder="(*an SMS message will be sent to receiver)" required>
+
+    <label for="product">Select Credit Amount to Buy/Send:</label>
+     <select id="fee" required>
                         <option value="usd10">USD $10 - $2 fee</option>
                         <option value="usd15">USD $15 - $2 fee</option>
                         <option value="usd25">USD $25 - $2 fee</option>
@@ -176,13 +195,15 @@
                         <option value="usd75">USD $75 - $4 fee</option>
                         <option value="usd100">USD $100 - $4 fee</option>
                     </select>
-                </div>
-               
-            </div>
-            <div class="button-container">
-                <button class="blue-button">Make Payment>></button>
-            </div>
-        </div>
+
+  
+
+    <button type="submit">Make Payment >></button>
+</form>
+    </div>
     </main>
+    <footer class="global-footer">
+        © 2025 WleeSend. All Rights Reserved.
+   </footer> 
 </body>
 </html>
