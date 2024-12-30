@@ -3,10 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WleeSend Send Credit: Send mobile data and utility credits
-to the world. </title>
-<meta name="description" content="WleeSend: Send mobile data and utility credits to the
-world./>
+    <title>WleeSend Send Credit: Send Mobile Data and Utility Credits to the World</title>
+    <meta name="description" content="WleeSend: Send mobile data and utility credits to the world.">
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -27,26 +25,25 @@ world./>
             background: #fff;
         }
 
-                .logo {
-    width: 29%;
-}
-
+        .logo img {
+            width: 29%;
+        }
 
         .auth-menu a {
             margin-left: 20px;
             text-decoration: none;
         }
 
-a.login {
-color: #ea2f2f;
-}
+        a.login {
+            color: #ea2f2f;
+        }
 
         .auth-menu a:hover {
             text-decoration: underline;
         }
 
         .sub-menu {
-            background-color: #2b2980; /* Changed to new color */
+            background-color: #2b2980;
         }
 
         .sub-menu ul {
@@ -71,22 +68,21 @@ color: #ea2f2f;
 
         main {
             padding-bottom: 0px;
-            text-align: center; /* Center align text in main */
+            text-align: center;
         }
-        
-      .subheading {
-    color: #ea2f2f;
-    font-size: 18px;
-    margin-top: 10px;
-    margin-bottom: 20px;
-    text-align: center;
-    font-weight: 600;
-}
+
+        .subheading {
+            color: #ea2f2f;
+            font-size: 18px;
+            margin-top: 10px;
+            margin-bottom: 20px;
+            text-align: center;
+            font-weight: 600;
+        }
+
         .signup-container {
             width: 300px;
             margin: 50px auto;
-      
-         
         }
 
         .signup-container h1 {
@@ -135,35 +131,37 @@ color: #ea2f2f;
         .signup-container button:hover {
             background-color: darkred;
         }
-        /* Style for the footer */
+
         .global-footer {
             background-color: #2b2980;
             color: #ffffff;
             text-align: center;
             padding: 10px;
             font-family: Arial, sans-serif;
-            font-size: 14px; }
-    
-    @media only screen and (max-width: 600px) {
-        main {
-    padding-bottom: 35px;
-            padding-top:35px;
+            font-size: 14px;
+        }
 
-}
+        @media only screen and (max-width: 600px) {
+            main {
+                padding-bottom: 35px;
+                padding-top: 35px;
+            }
 
-        .logo {
-    width: 50%;
-}
-
+            .logo img {
+                width: 50%;
+            }
+        }
     </style>
 </head>
 <body>
     <header>
         <div class="top-menu">
-            <div class="logo"><img src="WleeSend.png" alt="WleeSend Logo" class="logo" /></div>
+            <div class="logo">
+                <img src="WleeSend.png" alt="WleeSend Logo" />
+            </div>
             <div class="auth-menu">
                 <a href="#" class="login" onclick="showLogin()">Login</a>
-                <a href="#" class="Signup" onclick="showSignup()">Sign Up</a>
+                <a href="#" class="signup" onclick="showSignup()">Sign Up</a>
             </div>
         </div>
         <nav class="sub-menu">
@@ -176,29 +174,28 @@ color: #ea2f2f;
     </header>
     
     <main>
-        <!-- Signup Section -->
         <div class="signup-container">
-        <h1>My Account</h1>
-        <div class="subheading">Send Mobile Airtime Credit: Receiver and Amount</div>
-        <form action="#" method="POST">
-    <label for="phone-number">Enter Receiver’s Phone Number:</label>
-    <input type="text" id="phone-number" name="phone-number" placeholder="(*an SMS message will be sent to receiver)" required>
+            <h1>My Account</h1>
+            <div class="subheading">Send Mobile Airtime Credit: Receiver and Amount</div>
+            <form action="#" method="POST">
+                <label for="phone-number">Enter Receiver’s Phone Number:</label>
+                <input type="text" id="phone-number" name="phone-number" placeholder="(*an SMS message will be sent to receiver)" required>
+                
+                <label for="operator">Select Operator:</label>
+                <input type="text" id="operator" name="operator" required>
 
-    <label for="operator">Select Operator:</label>
-    <input type="text" id="operator" name="operator" required>
+                <label for="product">Select Product:</label>
+                <input type="text" id="product" name="product" required>
 
-    <label for="product">Select Product:</label>
-    <input type="text" id="product" name="product" required>
+                <label for="amount">Enter Amount:</label>
+                <input type="number" id="amount" name="amount" required>
 
-    <label for="amount">Enter Amount:</label>
-    <input type="number" id="amount" name="amount" required>
-
-    <button type="submit">Next Make Payment >></button>
-</form>
-    </div>
+                <button type="submit">Next: Make Payment >></button>
+            </form>
+        </div>
     </main>
     <footer class="global-footer">
         © 2025 WleeSend. All Rights Reserved.
-   </footer> 
+    </footer>
 </body>
 </html>
