@@ -3,28 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WleeSend Home: Send mobile data and utility credits
-to the world. </title>
-<meta name="description" content="WleeSend: Send mobile data and utility credits to the
-world./>
- <link rel="icon" type="image/png" href="/wleesend/wleesend%20favicon.png.jpg">
+    <title>WleeSend Home: Send mobile data and utility credits to the world.</title>
+    <meta name="description" content="WleeSend: Send mobile data and utility credits to the world." />
+    <link rel="icon" type="image/png" href="/wleesend/wleesend%20favicon.png.jpg">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
         <div class="top-menu">
-         <div class="logo">
-  <a href="/wleesend/Home.html">
-    <img src="WleeSend.png" alt="WleeSend Logo" class="logo" />
-  </a>
-</div>
+            <div class="logo">
+                <a href="/wleesend/Home.html">
+                    <img src="WleeSend.png" alt="WleeSend Logo" class="logo" />
+                </a>
+            </div>
             <div class="auth-menu">
                 <a href="/wleesend/My%20Account%20Login.html">Login</a>
                 <a href="/wleesend/My%20Account%20Signup.html">Sign Up</a>
             </div>
         </div>
         <nav class="sub-menu">
-               <ul>
+            <ul>
                 <li><a href="/wleesend/About.html">About</a></li>
                 <li><a href="/wleesend/Products.html">Products</a></li>
                 <li><a href="/wleesend/Support.html">Support</a></li>
@@ -35,17 +33,154 @@ world./>
         <h1>Send Data, Utility, and Voucher credit to friends, relatives around the world.*</h1>
         <p>(Currently available to these countries only: <img src="Liberia flag.svg" alt="Liberia Flag" class="flag" /> Liberia)</p>
         <div class="button-container">
-            <button class="red-button"><a href="/wleesend/MyAccountSendMobileAirtimeCredit.html" style="color: #fff; text-decoration: none;>Send Mobile Airtime/Data (MTN/Orange)</a></button>
-            <button class="red-button"><a href="/wleesend/SendLECCreditReceiverandAmount.html" style="color: #fff; text-decoration: none;>Send Utility Credit (LEC)</a></button>
+            <button class="red-button">
+                <a href="/wleesend/MyAccountSendMobileAirtimeCredit.html" style="color: #fff; text-decoration: none;">Send Mobile Airtime/Data (MTN/Orange)</a>
+            </button>
+            <button class="red-button">
+                <a href="/wleesend/SendLECCreditReceiverandAmount.html" style="color: #fff; text-decoration: none;">Send Utility Credit (LEC)</a>
+            </button>
         </div>
     </main>
-
-        <footer class="global-footer">
-    <a href="/wleesend/Home.html" style="color: #fff; text-decoration: none; ">© 2025 WleeSend. All Rights Reserved.</a>
-   </footer> 
-  
+    <footer class="global-footer">
+        <a href="/wleesend/Home.html" style="color: #fff; text-decoration: none;">© 2025 WleeSend. All Rights Reserved.</a>
+    </footer> 
 </body>
 </html>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #f8f8f8;
+    border-bottom: 1px solid #ddd;
+}
+
+.top-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background: #fff;
+}
+
+.logo {
+    width: 29%;
+}
+
+.auth-menu a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #2b2980; 
+}
+
+.auth-menu a:hover {
+    text-decoration: underline;
+}
+
+.sub-menu{
+    background-color: #2b2980; 
+}
+
+
+
+.sub-menu ul {
+    list-style: none;
+    padding: 10px 20px;
+    margin: 0;
+    display: flex;
+}
+
+.sub-menu li {
+    margin-right: 20px;
+}
+
+.sub-menu a {
+    color: white;
+    text-decoration: none;
+}
+
+.sub-menu a:hover {
+    text-decoration: underline;
+}
+
+main {
+  
+    text-align: center; /* Center align text in main */
+    background-image: url('background wleesend.jpeg');
+            background-size: cover;
+            background-position: center;
+           height: auto;
+            color: #fff; 
+       padding-top: 200px;
+    padding-bottom: 200px;
+    text-shadow: 2px 2px #2b2980
+}
+
+h1, p {
+    margin: 0; /* Remove default margin */
+}
+
+.button-container {
+    margin-top: 20px; /* Add some space above the buttons */
+}
+
+.red-button {
+    background-color: #FF4C4C; /* Red background */
+    color: white; /* White text */
+    border: none; /* Remove border */
+    padding: 10px 20px; /* Padding for the button */
+    margin: 0 10px; /* Space between buttons */
+    cursor: pointer; /* Pointer cursor on hover */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 16px; /* Font size */
+}
+
+.red-button:hover {
+    background-color: #d82c2c; /* Darker red on hover */
+
+}
+    .flag {
+    width: 1% !important;
+}
+
+ /* Style for the footer */
+        .global-footer {
+            background-color: #2b2980;
+            color: #ffffff;
+            text-align: center;
+            padding: 10px;
+            font-family: Arial, sans-serif;
+            font-size: 14px; }
+    
+    @media only screen and (max-width: 600px) {
+        main {
+    text-align: center;
+    background-image: url(background wleesend.jpeg);
+    background-size: cover;
+    background-position: center;
+    height: auto;
+    color: #fff;
+    padding-top: 185px;
+    padding-bottom: 185px;
+    text-shadow: 2px 2px #2b2980;
+}
+
+        .logo {
+    width: 50%;
+}
+
+        .red-button{
+            margin-bottom: 15px;
+        }
+
+.flag {
+    width: 3% !important;
+}
+
+</style>
 <style>
 body {
     font-family: Arial, sans-serif;
